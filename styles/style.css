@@ -14,9 +14,20 @@
 /* CUSTOM PROPERTIES */
 /*********************/
 :root {
-	/* startje */
-	--color-text:#111;
-	--color-background:#eee;
+	/* kleuren*/
+	--color-text-header:#ffffff;
+	--color-text-hoofdtekst: #605F5B;
+	--color-text-p:#A8A7A3;
+
+}
+	/* fonts */
+@font-face {
+  font-family: "rhode header";
+  src: url("../fonts/60a6c625-19b1-4df2-8635-49ba40161273.woff2");
+}
+@font-face {
+  font-family: "rhode ";
+  src: url("../fonts/60a6c625-19b1-4df2-8635-49ba40161273.woff2");
 }
 
 
@@ -27,5 +38,139 @@
 /* JOUW STYLING */
 /****************/
 
-/* jouw code */
+/* HEADER */
+header{
+	font-family: "rhode header";
+}
 
+header nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+	
+}
+header nav ul{
+    display: flex;
+    flex: 1;             
+    gap: 2em;
+    list-style: none;
+	margin: 0;
+}
+header nav ul li a{
+	text-decoration: none;
+}
+header nav ul li:nth-child(1) {
+	text-transform: uppercase;
+    
+}
+header nav ul li:nth-child(2) {
+	text-transform: uppercase;
+}
+
+header nav ul li:nth-child(3) {
+    margin-right: auto; 
+	text-transform: uppercase;
+}
+header nav ul li:nth-of-type(4){
+	font-family: "rhode";
+	font-size: 3em;
+
+}
+header nav a li:nth-of-type(4){
+	text-transform: lowercase;
+	font-size: 10em;
+}
+header nav ul li:nth-child(5) {
+    margin-left: auto;   
+	text-transform: uppercase;
+}
+header nav ul li:nth-child(6) {
+	text-transform: uppercase;
+}
+header nav ul li:nth-child(7) {
+	text-transform: uppercase;
+	
+}
+
+
+
+
+header button {
+  appearance:none;
+  
+  width:2.5em;
+  aspect-ratio:1/1;
+  background-color: #ffffff;
+  border:none;
+  padding:0;
+  
+  display:grid;
+  justify-items:center;
+  align-items:center;
+}
+header button span{
+  display:block;
+    
+  width:1.5em;
+  height:0.1em;
+  background-color: black;
+  
+  grid-row-start:1;
+  grid-column-start:1; 
+  
+  transition:0.2s;
+}
+
+header button span:nth-of-type(1) {
+  translate:0 -0.3em;
+}
+
+header button span:nth-of-type(2) {
+/*  staat al goed  */
+}
+
+header button span:nth-of-type(3) {
+  translate:0 0.3em;
+}
+
+header button.is-open span:nth-of-type(1) {
+  translate:0 0;
+  rotate:-180deg;
+}
+
+header button.is-open span:nth-of-type(2) {
+scale:0 1;
+}
+
+header button.is-open span:nth-of-type(3) {
+  translate:0 0;
+  rotate:180deg;
+}
+
+header nav ul { 
+ 
+  translate: -100% 0;
+  
+  transition:1s;
+  
+}
+
+header nav.open ul {
+  /* translate:0 0; */
+  display: flex;
+  
+}
+
+
+
+/* MEDIA QUERIES */
+@media (max-width:46em) {
+  header nav li{
+   display: none;
+  }
+}
+@media (min-width:46em) {
+  header section button{
+   display: none;
+  }
+}

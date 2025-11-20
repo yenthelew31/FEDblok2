@@ -56,8 +56,22 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken na test in 2<sup>e</sup> werkgroep</summary>
 
   ### Bevindingen
-  Lijst met je bevindingen die in de test naar voren kwamen:
 
+Lijst met bevindingen van de website die in de test naar voren kwamen:
+
+Goede punten:
+- alle producten hebben een goeie duidelijke herkenbare titel als ze worden voorgelezen.
+- goed te doen met de tab
+
+Minder goede punten:
+- de homepagina heeft geen h1
+- de productpagina heeft een h1 ergens helemaal onderaan
+- bij beide pagina's is de volgorde van de koppen niet kloppend. (3-> 1, 4-> 2)
+- hij leest soms alleen afbeelding voor zonder een passende titel
+
+Wat mij opviel in het algemeen:
+- heel veel artikels
+- veel links (meer dan ik me had voorgesteld)
 </details>
 
 
@@ -67,14 +81,11 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 <details>
   <summary>uitwerken na afloop 3<sup>e</sup> werkgroep</summary>
 
-  ### de hele pagina: 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="breakdown van de hele pagina">
+  ### de home pagina: 
+  <img src="readme-images/Breakdown schets.png" width="375px" alt="breakdown van de home pagina">
 
-  ### dynamisch deel (bijv menu): 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="breakdown van een dynamisch deel">
-
-  ### wellicht nog een dynamisch deel (bijv filter): 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="breakdown van nog een dynamisch deel">
+  ### de product pagina: 
+  <img src="readme-images/Breakdownschets.png" width="375px" alt="breakdown van de product pagina">
 
 </details>
 
@@ -90,15 +101,21 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   ### Stand van zaken
   hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
 
+  Dit was lastig:
+  Ik merkte dat ik heel veel basiscode van vorig jaar alweer helemaal was vergeten. Bijvoorbeeld hoe een nav werkt in de html maar mijn grootste moeite lag bij css. Door de lessen kwam er wel wat herkenning maar niet uit mezelf
+
+  Dit ging goed:
+  Ik ben naar elke les gegaan en heb me ook goed voorbereid. Ik had thuis flexbox froggy en grid garden gespeeld en ik merkte dat dit me echt heeft geholpen. Woensdag was ik begonnen met mijn html pagina en dit ging echt heel goed. Ik was zelfs al uit enthousiasme begonnen met css, misschien iets te enthousiast want was vergeten te beginnen met een small-screen. 
+
 
   ### Agenda voor meeting
   samen met je groepje opstellen
 
-  | student 1      | student 2          | student 3    | student 4        |
-  | ---            | ---                | ---          | ---              |
-  | dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
-  | en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
-  | ...            | ...                | ...          | ...              |
+  | Yenthe.          | student 2          | student 3    | student 4        |
+  | ---              | ---                | ---          | ---              |
+  | arialabel?       | en dit             | en ik dit    | en dan ik dat    |
+  | custom properties| dit als er tijd is | nog een punt | dit wil ik zeker |
+  | ...              | ...                | ...          | ...              |
 
 
   ### Verslag van meeting
