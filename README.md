@@ -82,10 +82,10 @@ Wat mij opviel in het algemeen:
   <summary>uitwerken na afloop 3<sup>e</sup> werkgroep</summary>
 
   ### de home pagina: 
-  <img src="readme-images/Breakdown schets.png" width="375px" alt="breakdown van de home pagina">
+  <img src="readme-images/breakdownschets1.png" width="375px" alt="breakdown van de home pagina">
 
   ### de product pagina: 
-  <img src="readme-images/Breakdownschets.png" width="375px" alt="breakdown van de product pagina">
+  <img src="readme-images/breakdownschets2.png" width="375px" alt="breakdown van de product pagina">
 
 </details>
 
