@@ -18,6 +18,7 @@
 	--color-text-header:#ffffff;
 	--color-text-hoofdtekst: #605F5B;
 	--color-text-p:#A8A7A3;
+	--color-achtergrondvlakken: #F1F0EC;
 
 }
 	/* fonts */
@@ -91,16 +92,16 @@ header nav ul li:nth-child(7) {
 	text-transform: uppercase;
 	
 }
+/* nav li */
 
 
-
-
+/* menu button opmaak */
 header button {
   appearance:none;
   
   width:2.5em;
   aspect-ratio:1/1;
-  background-color: #ffffff;
+  background-color: var(--color-achtergrondvlakken);
   border:none;
   padding:0;
   
@@ -113,7 +114,7 @@ header button span{
     
   width:1.5em;
   height:0.1em;
-  background-color: black;
+  background-color:var(--color-text-hoofdtekst);
   
   grid-row-start:1;
   grid-column-start:1; 
@@ -146,21 +147,18 @@ header button.is-open span:nth-of-type(3) {
   translate:0 0;
   rotate:180deg;
 }
+/* einde buttonopmaak */
 
-header nav ul { 
- 
-  translate: -100% 0;
-  
-  transition:1s;
-  
-}
-
-header nav.open ul {
+header nav.open {
   /* translate:0 0; */
-  display: flex;
-  
+  /* display: flex; */
+  translate:0 0;
 }
-
+/* nav button {
+  position:relative;
+  z-index:1;
+  
+} */
 
 
 /* MEDIA QUERIES */
@@ -168,6 +166,43 @@ header nav.open ul {
   header nav li{
    display: none;
   }
+ header nav {
+    position: fixed;
+    inset: 0;
+    background:var(--color-achtergrondvlakken);
+    translate: 0 -100%;
+    transition: 0.9s ease;
+    padding-top: 5em;
+  }
+
+  header nav.open {
+    translate: 0 0;
+  }
+
+  header nav ul {
+    display: flex;
+    flex-direction: column;
+	align-content: flex-start;
+    gap: 2em;
+    list-style: none;
+    padding-left: 2em;
+  }
+
+  header nav ul li {
+    display: block;
+	
+  }
+header section button {
+  position:relative;
+  z-index:1100;
+  
+}
+header nav a li:nth-of-type(4){
+	text-transform: lowercase;
+	font-size: 10em;
+	/* display: flex;
+	align-content: flex-start; */
+}
 }
 @media (min-width:46em) {
   header section button{
