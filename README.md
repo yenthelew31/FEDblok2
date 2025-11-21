@@ -111,10 +111,10 @@ Wat mij opviel in het algemeen:
   ### Agenda voor meeting
   samen met je groepje opstellen
 
-  | Yenthe.          | student 2          | student 3    | student 4        |
+  | Yenthe           | Arpine             | Omra         | Laura            |
   | ---              | ---                | ---          | ---              |
-  | arialabel?       | en dit             | en ik dit    | en dan ik dat    |
-  | custom properties| dit als er tijd is | nog een punt | dit wil ik zeker |
+  | arialabel?       | wanneer flexbox    | nth-of-type  | en dan ik dat    |
+  | custom properties| en wanneer grid    |              |
   | ...              | ...                | ...          | ...              |
 
 
