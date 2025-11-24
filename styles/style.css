@@ -23,15 +23,21 @@
 }
 	/* fonts */
 @font-face {
-  font-family: "rhode header";
+  font-family: "rhode 1";
   src: url("../fonts/60a6c625-19b1-4df2-8635-49ba40161273.woff2");
 }
 @font-face {
-  font-family: "rhode ";
-  src: url("../fonts/60a6c625-19b1-4df2-8635-49ba40161273.woff2");
+  font-family: "rhode 2 ";
+  src: url("../fonts/195b0c1b-165f-4bd1-b23f-cbb6a9a3aa24.woff2");
 }
-
-
+@font-face {
+  font-family: "rhode 3";
+  src: url("../fonts/download.woff");
+}
+@font-face {
+  font-family: "rhode titel";
+  src: url("../fonts/rhodelettertyp.woff2");
+}
 
 
 
@@ -41,13 +47,14 @@
 
 /* HEADER */
 header{
-	font-family: "rhode header";
+	font-family: "rhode 1";
 }
 
 header nav {
     display: flex;
     align-items: center;
     justify-content: center;
+	
 	
 }
 header nav ul{
@@ -56,6 +63,8 @@ header nav ul{
     gap: 2em;
     list-style: none;
 	margin: 0;
+	z-index: 100;
+	font-family: 'rhode 4';
 }
 header nav ul li a{
 	text-decoration: none;
@@ -149,17 +158,6 @@ header button.is-open span:nth-of-type(3) {
 }
 /* einde buttonopmaak */
 
-header nav.open {
-  /* translate:0 0; */
-  /* display: flex; */
-  translate:0 0;
-}
-/* nav button {
-  position:relative;
-  z-index:1;
-  
-} */
-
 
 /* MEDIA QUERIES */
 @media (max-width:46em) {
@@ -177,35 +175,36 @@ header nav.open {
 
   header nav.open {
     translate: 0 0;
+	z-index: 1000;
   }
 
-  header nav ul {
-    display: flex;
-    flex-direction: column;
-	align-content: flex-start;
-    gap: 2em;
-    list-style: none;
-    padding-left: 2em;
+  header nav.open ul{
+	display: grid;
+	grid-template-columns: 0;
+	grid-template-rows: 1;
+	align-self: flex-start;
   }
 
   header nav ul li {
     display: block;
-	
-  }
-header section button {
+}
+  header section button {
   position:relative;
   z-index:1100;
   
 }
-header nav a li:nth-of-type(4){
+  header nav a li:nth-of-type(4){
 	text-transform: lowercase;
 	font-size: 10em;
-	/* display: flex;
-	align-content: flex-start; */
+
 }
+
 }
 @media (min-width:46em) {
   header section button{
    display: none;
   }
 }
+
+
+

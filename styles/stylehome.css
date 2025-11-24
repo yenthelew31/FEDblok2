@@ -1,0 +1,33 @@
+/* opmaak video */
+main video{
+    width: 100%;
+    position:absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+}
+
+/* opmaak article */
+main section article{
+flex-direction: column-reverse;
+background-color: var(--color-achtergrondvlakken);
+border-radius: 3em;
+height: 30em;
+width: 15em;
+display: flex;
+flex-direction: column-reverse;
+font-family: "rhode titel";
+}
+
+main section article img{
+   width: 13em;
+   display: grid;
+   grid-template-rows: reverse;
+}
+main section article h2{
+  display:grid;
+  grid-template-columns: 0;
+  grid-template-rows: 0;
+
+}
+
