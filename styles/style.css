@@ -14,11 +14,17 @@
 /* CUSTOM PROPERTIES */
 /*********************/
 :root {
+	color-scheme: light dark;
 	/* kleuren*/
-	--color-text-header:#ffffff;
 	--color-text-hoofdtekst: #605F5B;
-	--color-text-p:#A8A7A3;
+	--color-text-p:rgb(103, 100, 94);
+	--color-text-header:#70706E;
 	--color-achtergrondvlakken: #F1F0EC;
+	--color-text-header:#ffffff; 
+	--color-text-footer: #000000;
+	--color-text-footerp: #8d8d8b;
+
+
 
 }
 	/* fonts */
@@ -27,7 +33,7 @@
   src: url("../fonts/60a6c625-19b1-4df2-8635-49ba40161273.woff2");
 }
 @font-face {
-  font-family: "rhode 2 ";
+  font-family: "rhode 2";
   src: url("../fonts/195b0c1b-165f-4bd1-b23f-cbb6a9a3aa24.woff2");
 }
 @font-face {
@@ -54,21 +60,27 @@ header nav {
     display: flex;
     align-items: center;
     justify-content: center;
-	
+	position: relative;
 	
 }
 header nav ul{
     display: flex;
+	align-items: center;
     flex: 1;             
-    gap: 2em;
+    gap: 4em;
     list-style: none;
 	margin: 0;
 	z-index: 100;
-	font-family: 'rhode 4';
+	font-family: 'rhode 1';
+	position: absolute;
+	top:1em;
 }
 header nav ul li a{
 	text-decoration: none;
+	color: var(--color-text-header);
+
 }
+
 header nav ul li:nth-child(1) {
 	text-transform: uppercase;
     
@@ -78,20 +90,14 @@ header nav ul li:nth-child(2) {
 }
 
 header nav ul li:nth-child(3) {
-    margin-right: auto; 
+   
 	text-transform: uppercase;
 }
 header nav ul li:nth-of-type(4){
-	font-family: "rhode";
+	font-family: "rhode 1";
 	font-size: 3em;
-
-}
-header nav a li:nth-of-type(4){
-	text-transform: lowercase;
-	font-size: 10em;
 }
 header nav ul li:nth-child(5) {
-    margin-left: auto;   
 	text-transform: uppercase;
 }
 header nav ul li:nth-child(6) {
@@ -164,10 +170,11 @@ header button.is-open span:nth-of-type(3) {
   header nav li{
    display: none;
   }
+
  header nav {
     position: fixed;
     inset: 0;
-    background:var(--color-achtergrondvlakken);
+    
     translate: 0 -100%;
     transition: 0.9s ease;
     padding-top: 5em;
@@ -176,6 +183,7 @@ header button.is-open span:nth-of-type(3) {
   header nav.open {
     translate: 0 0;
 	z-index: 1000;
+	background-color: var(--color-achtergrondvlakken);
   }
 
   header nav.open ul{
@@ -193,9 +201,9 @@ header button.is-open span:nth-of-type(3) {
   z-index:1100;
   
 }
-  header nav a li:nth-of-type(4){
-	text-transform: lowercase;
-	font-size: 10em;
+header nav a li:nth-of-type(4){
+text-transform: lowercase;
+font-size: 10em;
 
 }
 
@@ -206,5 +214,49 @@ header button.is-open span:nth-of-type(3) {
   }
 }
 
+/* opmaak footer */
+footer{
+    background-color: var(--color-achtergrondvlakken);
+    border-radius: 2em;
+	
+}
+footer h2{
+    font-family: "rhode 1";
+    font-size: 7em;
+    color: var(--color-text-footer);
+    margin-top: 0;
+    margin-bottom:0;
+	padding-bottom: 0em;
+	border-bottom: 1px solid var(--color-text-footer);
 
+}
+footer section h3{
+	font-family: "rhode2 2";
+}
+footer section{
+	display: flex;
+	justify-content: space-between;
+}
 
+footer section nav ul{
+ padding: 0;
+ margin: 0;
+ list-style: none;
+}
+
+footer section ul li{
+	padding: 1em;
+}
+
+footer section ul li a{
+	text-decoration: none;
+	color: var(--color-text-footerp);
+	font-family: "rhode 2";
+	font-size: .9em;
+}
+footer section nav h3{
+	font-family: "rhode 2";
+	text-transform: uppercase;
+	color: var(--color-text-hoofdtekst);
+	font-size: .9em;
+}

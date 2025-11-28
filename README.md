@@ -121,10 +121,12 @@ Wat mij opviel in het algemeen:
   ### Verslag van meeting
   hier na afloop snel de uitkomsten van de meeting vastleggen
 
-  - punt 1
-  - punt 2
-  - nog een punt
-  - ...
+  - Voor alt teksten een duidelijke begrijpbare tekst schrijven
+  - Sommige buttons moeten a worden
+  - Een data element gebruiken voor prijzen
+  - Om een input moet altijd een form
+  - Custom properties kan je voor bijna alles gebruiken, het makkelijkst is voor kleuren, fonts en spacing.
+
 
 </details>
 
@@ -138,17 +140,18 @@ Wat mij opviel in het algemeen:
   <summary>uitwerken voor 2<sup>e</sup> voortgang</summary>
 
   ### Stand van zaken
-  hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
-
+  Het deel van de video erin zetten ging erg goed. De html was ook helemaal goed. Ik vind het alleen heel lastig om met css teksten goed te positioneren. Ik weet vaak dan niet wat ik hiervoor het beste kan gebruiken. Ook loop ik er tegen aan dat mijn afbeeldingen niet meeschalen op de manier dat ik het liefst wil.
 
   ### Agenda voor meeting
   samen met je groepje opstellen
 
-  | student 1      | student 2          | student 3    | student 4        |
+  | Yenthe         | Laura              | Omra         | Arpine           |
   | ---            | ---                | ---          | ---              |
-  | dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
-  | en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
-  | ...            | ...                | ...          | ...              |
+  | Afbeeldingen   | Vraag over divs    | positioneren?| carousel afbeel- |
+  | mee schalen    | header> displaynone| css of html? |dingen grootte    |
+  | display:grid   | hoe positioneren?  | Lettertype   |grid extra column |
+  | positioneren   | pijltjes carousel  | veranderen?  |
+         
 
 
   ### Verslag van meeting

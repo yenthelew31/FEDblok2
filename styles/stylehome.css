@@ -1,33 +1,253 @@
+
 /* opmaak video */
 main video{
-    width: 100%;
-    position:absolute;
-    top: 0;
+    width: 95%;
+    position: relative;
+    right: 0;
     left: 0;
-    bottom: 0;
+    top: 0;
+    min-width: 100%;
+    min-height: 100%;
+    border-radius: 1em;
+    
+}
+/* opmaak eerste section KLEIN scherm */
+@media (min-width:46em) {
+  main section:nth-of-type(1){
+    position: relative;
+}
+main section:nth-of-type(1) h2{
+    position: absolute;
+    bottom: 3em;
+    right: 1em;
+    z-index: 1000;
+    font-family: "rhode 1";
+    text-transform: uppercase;
+    color: var(--color-text-header);
+}
+main section:nth-of-type(1) a{
+    position: absolute;
+    bottom: 2em;
+    right: 2em;
+    z-index: 1000;
+    font-family: "rhode 1";
+    color: var(--color-text-header);
+    text-transform: uppercase;
+    border: .1em solid var(--color-text-header);
+    padding: .6em;
+    border-radius: 2em;
+    padding-left: 1em;
+    padding-right: 1em;
+}
+main section:nth-of-type(1) button{
+    appearance: none;
+    border: none;
+    opacity: 100%;
+    background-color: transparent;
+    border:.1em solid var(--color-text-header);
+    border-radius: 4em;
+
+    position: absolute;
+    bottom: 2em;
+    left: 3em;
+    padding: 2em;
 }
 
-/* opmaak article */
+main section:nth-of-type(1) button img{
+    display: block;
+    width: 2em;
+    height: 2em;
+    position: absolute;
+    bottom: 1.1em;
+    left: 1em;
+    /* padding:em; */
+    /* background-color: transparent; */
+
+    @media (prefers-color-scheme:dark ) {
+        filter: invert(1);
+    }
+}
+}
+/* opmaak eerste section KLEIN scherm */
+@media (max-width:46em) {
+  main section:nth-of-type(1){
+    position: relative;
+}
+main section:nth-of-type(1) h2{
+    position: absolute;
+    bottom: 3em;
+    right: 1em;
+    z-index: 1000;
+    font-family: "rhode 1";
+    text-transform: uppercase;
+    color: var(--color-text-header);
+    font-size: 1em;
+}
+main section:nth-of-type(1) a{
+    position: absolute;
+    bottom: 1.5em;
+    right: 1em;
+    z-index: 1000;
+    font-family: "rhode 1";
+    color: var(--color-text-header);
+    text-transform: uppercase;
+    border: .1em solid var(--color-text-header);
+    padding: .6em;
+    border-radius: 2em;
+    padding-left: 1em;
+    padding-right: 1em;
+    font-size: 0.8em;
+}
+main section:nth-of-type(1) button{
+    appearance: none;
+    border: none;
+    opacity: 100%;
+    background-color: transparent;
+    border:.1em solid var(--color-text-header);
+    border-radius: 4em;
+
+    position: absolute;
+    bottom: 1em;
+    left: 1em;
+    padding: 1.3em;
+}
+
+main section:nth-of-type(1) button img{
+    display: block;
+    width: 1.5em;
+    height: 1.5em;
+    position: absolute;
+    bottom: .5em;
+    left: .5em;
+    /* padding:em; */
+    /* background-color: transparent; */
+
+    @media (prefers-color-scheme:dark ) {
+        filter: invert(1);
+    }
+}
+}
+
+/* opmaak article carousel */
 main section article{
-flex-direction: column-reverse;
 background-color: var(--color-achtergrondvlakken);
-border-radius: 3em;
+border-radius: 1em;
 height: 30em;
-width: 15em;
+width: 40em;
 display: flex;
 flex-direction: column-reverse;
-font-family: "rhode titel";
+
+display: grid;
+
+position: relative;
 }
 
 main section article img{
-   width: 13em;
-   display: grid;
-   grid-template-rows: reverse;
+   width: 20em;
+   order: -1;
+
+   display: flex;
+   justify-self: center;
+   border-radius: 1em;
 }
 main section article h2{
-  display:grid;
-  grid-template-columns: 0;
-  grid-template-rows: 0;
+/* justify-self: start;
+align-self: end; */
+position: absolute;
+top: 0;
+left: 0;
+font-family: "rhode titel";
+color: var(--color-text-hoofdtekst);
+font-size: 2em;
+text-transform: lowercase;
+padding-left: .4em;
+}
+
+main section article h3{
+    font-family: "rhode 1";
+    text-transform: uppercase;
+    color: var(--color-text-hoofdtekst);
+    font-size: .9em;
+    grid-row-start: 2;
+    margin: 0;
 
 }
+
+main section article p:nth-of-type(2) {
+grid-row-start: 3;
+color: var(--color-text-p);
+margin: 0;
+font-family: "rhode 1";
+font-size: .8em;
+}
+main section article p:nth-of-type(3) {
+  grid-column-start:2;
+  grid-column-end: 2;
+  margin: 0;
+  
+   
+}
+
+/* carousel articles */
+main section:nth-child(2){
+   display: flex;
+   overflow-x:auto;
+ scroll-snap-type: x mandatory;
+ scroll-behavior: smooth;
+ overscroll-behavior-x: auto;
+ gap: 1em;
+ margin-top: 2em;
+   anchor-name: --carousel;
+  scroll-behavior:smooth;
+
+}
+
+main section article {
+  flex-basis: 20em;
+  flex-shrink: 0;
+  scroll-snap-align: center;
+}
+
+main section:nth-child(2){
+  &::scroll-button(*) {
+    position: fixed;
+    position-anchor: --carousel;
+    position-visibility: always;
+  }
+
+  &::scroll-button(right) {
+    position-area: block-end center;
+    content: '>' / 'Next';
+    justify-self:end;
+  }
+
+  &::scroll-button(left) {
+    position-area: block-end center;
+    content: '<' / 'Previous';
+    justify-self:start;
+  }
+}
+
+/* opmaak eerste article */
+main article:nth-of-type(7) {
+  position: relative;
+  width: 20em;
+  height: 10em;
+}
+
+/* main article:nth-of-type(2) img:nth-of-type(2){
+  width: 40em;
+  transform: rotate(90deg);
+} */
+
+/* opmaak tweede article */
+main > article:nth-of-type(2) {
+  display: flex;
+  flex-direction: column-reverse;
+
+
+  background-color: var(--color-achtergrondvlakken);
+   
+}   
+
 
