@@ -156,11 +156,8 @@ Wat mij opviel in het algemeen:
 
   ### Verslag van meeting
   hier na afloop snel de uitkomsten van de meeting vastleggen
-
-  - punt 1
-  - punt 2
-  - nog een punt
-- ...
+  - object-fit:cover was de oplossing voor mijn afbeeldingen soort van laten inzoomen. Ook kwamen we er achter dat het plaatje veranderd. Dit ga ik proberen met het html picture element.
+  - Ik denk ook dat ik eindelijk een beetje begrijp hoe display grid werkt.
 
 </details>
 
@@ -174,12 +171,20 @@ Wat mij opviel in het algemeen:
   <summary>uitwerken na test in 9<sup>e</sup> werkgroep</summary>
 
   ### Bevindingen
-  Lijst met je bevindingen die in de test naar voren kwamen (geef ook aan wat er verbeterd is):
+  Wat is er verbeterd:
+  - Een dark/light mode
+  - goede alt teksten
+  - goede volgorde van de headings
+  - animatie kan gestopt worden
+  - alle foto carousels hebben knoppen dus je hoeft niet horizontaal te scrollen
+
 
 </details>
-
-
-
+<img src="readme-images/IMG_3485.jpeg" width="375px" alt="pagina 1 van de test">
+<img src="readme-images/IMG_3485 (1).jpeg" width="375px" alt="pagina 2 van de test">
+<img src="readme-images/IMG_3486 (1).jpeg" width="375px" alt="pagina 3 van de test">
+<img src="readme-images/IMG_3486.jpeg" width="375px" alt="pagina 4 van de test">
+<img src="readme-images/IMG_3487.jpeg" width="375px" alt="pagina 5 van de test">
 
 
 ## Voortgang 3 (week 4)
@@ -188,26 +193,25 @@ Wat mij opviel in het algemeen:
   <summary>uitwerken voor 3<sup>e</sup> voortgang</summary>
 
   ### Stand van zaken
-  hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
+  ik merkte dat ik eigenlijk de hele week bezig was met dingen weer maken die kapot waren. Dus dan voeg ik wat toe maar dan werkt er iets anders weer niet. Ik vind het dan lastig om uit te vinden waar het probleem dan vandaa komt.
 
 
   ### Agenda voor meeting
   samen met je groepje opstellen
 
-  | student 1      | student 2          | student 3    | student 4        |
+  | student 1      |Omra                | Laura.       | Arpine           |
   | ---            | ---                | ---          | ---              |
-  | dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
-  | en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
-  | ...            | ...                | ...          | ...              |
+  | grid in footer |                    | DOM          | h3 als img en a  |
+  | werkt niet     | carousel vakjes    | andere manier|                  |
+  | ik moet        |evengroot?          |dan div
+  |scrollen in me  |borderline langer?
+  |carousel        
 
 
   ### Verslag van meeting
   hier na afloop snel de uitkomsten van de meeting vastleggen
 
-  - punt 1
-  - punt 2
-  - nog een punt
-  - ...
+- mijn kapot gemaakte carousel was weer soort van gemaakt dus het scrollen ging weg, hoe ik de afbeeldingen de hele breedte en hoogte van me articles kreeg kwamen we nog niet uit. Dus dat ga ik nog proberen.
 
 </details>
 
@@ -221,23 +225,17 @@ Wat mij opviel in het algemeen:
   <summary>uitwerken voor eindgesprek</summary>
 
   ### Je uitkomst - karakteristiek screenshots:
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="uitomst opdracht 1">
-
+  <img src="readme-images/127.0.0.1_5500_product.html.png" width="375px" alt="product pagina rhode">
+  <img src="readme-images/127.0.0.1_5500_index.html.png" width="375px" alt="home pagina rhode">
 
   ### Dit ging goed/Heb ik geleerd: 
-  Korte omschrijving met plaatjes
-
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="top">
+  Ik heb afgelopen week echt goed geleerd en begrepen hoe display grid werkt. Eerst probeerde ik gewoon maar dingen totdat het werkte. Maar nu ik begrijp hoe het werkt zijn echt me ogen geopend. Ik vind dat mijn grid goed is gelukt bij mij product articles en mijn footer. Die zijn te zien hierboven op die afbeeldingen. Maar ja over het algemeen ben ik wel erg trots op mijn positionerns methodes. Hiervoor gebruikte ik bijna alleen maar postion absolute omdat dat het enige was wat ik kon begrijpen in mijn hoofd.
 
 
   ### Dit was lastig/Is niet gelukt:
-  Korte omschrijving met plaatjes
+  Het mee schalen is niet bij elke section/article even goed gelukt. Dit is vooral te zien bij de home pagina en dan het laatste article. Hoe trots ik dan wel ben op hoe goed het lijkt op die van de rhode site, is het eigelijk alleen maar mooi geschaald in of laptop formaat of telefoon. Je moet dus niet iets ertussen in hebben want dan valt mijn website niet te gebruiken. Al die verschillende html atributten vind ik ook nog steeds heel lastig. Het zijn er zoveel en ik denk dan niet na over wat ik anders daarvoor eventueel kan gebruiken.
 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="bummer">
 </details>
-
-
-
 
 
 ## Bronnenlijst
@@ -249,8 +247,9 @@ Wat mij opviel in het algemeen:
   Nb. ChatGpT en andere AI horen er ook bij.
   Nb. Vermeld de bronnen ook in je code.
 
-  1. bron 1
-  2. bron 2
-  3. ...
-
+  1. https://www.w3schools.com/howto/howto_css_hide_scrollbars.asp
+  2. https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Selectors/::scroll-button
+  3. Mijn docent
+  4. Annabel en Isabella
+  5. https://www.rhodeskin.com/en-nl (voor alle afbeeldingen, fonts en de video)
 </details>

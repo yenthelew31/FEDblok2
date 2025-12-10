@@ -23,9 +23,25 @@
 	--color-text-header:#ffffff; 
 	--color-text-footer: #000000;
 	--color-text-footerp: #8d8d8b;
+	--color-button-dicht: white;
+	/* --color-text-light:#747474; */
 
 
 
+}
+/* darkmode */
+@media (prefers-color-scheme: dark) {
+    :root {
+    --color-text-hoofdtekst:#afafaf;
+	--color-text-p:rgb(202, 202, 202);
+	--color-text-header:#70706E;
+	--color-achtergrondvlakken: #7e7e7e;
+	--color-text-header:#000000; 
+	--color-text-footer: #68645E;
+	--color-text-footerp: #68645E;
+	--color-button-dicht: white;
+	
+    }
 }
 	/* fonts */
 @font-face {
@@ -57,23 +73,28 @@ header{
 }
 
 header nav {
-    display: flex;
+	display: flex;
     align-items: center;
     justify-content: center;
-	position: relative;
 	
 }
 header nav ul{
     display: flex;
 	align-items: center;
-    flex: 1;             
-    gap: 4em;
+
+    gap: 2em;
     list-style: none;
-	margin: 0;
 	z-index: 100;
 	font-family: 'rhode 1';
 	position: absolute;
-	top:1em;
+	top:3em;
+	width: 100%;
+	padding: 0;
+	margin: 0;
+
+    flex: 1;            
+   padding-left: 4em;
+ padding-right: 4em;
 }
 header nav ul li a{
 	text-decoration: none;
@@ -83,30 +104,89 @@ header nav ul li a{
 
 header nav ul li:nth-child(1) {
 	text-transform: uppercase;
+	/* left: 4em; */
+	font-size: 1em;
+
     
 }
 header nav ul li:nth-child(2) {
 	text-transform: uppercase;
+	font-size: 1em;
+
 }
 
 header nav ul li:nth-child(3) {
-   
 	text-transform: uppercase;
+	font-size: 1em;
+	margin-right: auto;
 }
 header nav ul li:nth-of-type(4){
 	font-family: "rhode 1";
-	font-size: 3em;
+	font-size: 2.3em;
+	margin: 0;
 }
 header nav ul li:nth-child(5) {
 	text-transform: uppercase;
+	font-size: 1em;
+	margin-left: auto;
 }
 header nav ul li:nth-child(6) {
 	text-transform: uppercase;
+	font-size: 1em;
+	
 }
 header nav ul li:nth-child(7) {
 	text-transform: uppercase;
+	font-size: 1em;
+	
 	
 }
+@media (min-width:56em){
+header nav ul{
+    gap: 4em;
+}
+
+
+header nav ul li:nth-child(1) {
+
+	font-size: 1.3em;
+
+    
+}
+header nav ul li:nth-child(2) {
+	
+	font-size: 1.3em;
+
+}
+
+header nav ul li:nth-child(3) {
+	
+	font-size: 1.3em;
+
+}
+header nav ul li:nth-of-type(4){
+	
+	font-size: 3em;
+
+}
+header nav ul li:nth-child(5) {
+
+	font-size: 1.3em;
+	
+}
+header nav ul li:nth-child(6) {
+	
+	font-size: 1.3em;
+	
+}
+header nav ul li:nth-child(7) {
+	
+	font-size: 1.3em;
+	
+	
+}
+}
+
 /* nav li */
 
 
@@ -116,7 +196,7 @@ header button {
   
   width:2.5em;
   aspect-ratio:1/1;
-  background-color: var(--color-achtergrondvlakken);
+  background-color: var(--color-text-header);
   border:none;
   padding:0;
   
@@ -162,10 +242,9 @@ header button.is-open span:nth-of-type(3) {
   translate:0 0;
   rotate:180deg;
 }
-/* einde buttonopmaak */
 
 
-/* MEDIA QUERIES */
+
 @media (max-width:46em) {
   header nav li{
    display: none;
@@ -182,8 +261,8 @@ header button.is-open span:nth-of-type(3) {
 
   header nav.open {
     translate: 0 0;
-	z-index: 1000;
-	background-color: var(--color-achtergrondvlakken);
+	z-index: 10000;
+	background-color:var(--color-achtergrondvlakken);
   }
 
   header nav.open ul{
@@ -193,12 +272,14 @@ header button.is-open span:nth-of-type(3) {
 	align-self: flex-start;
   }
 
+
   header nav ul li {
     display: block;
 }
   header section button {
   position:relative;
-  z-index:1100;
+  z-index:11000;
+  background-color:var(--color-button-dicht);
   
 }
 header nav a li:nth-of-type(4){
@@ -206,8 +287,8 @@ text-transform: lowercase;
 font-size: 10em;
 
 }
-
 }
+
 @media (min-width:46em) {
   header section button{
    display: none;
@@ -215,48 +296,256 @@ font-size: 10em;
 }
 
 /* opmaak footer */
+
 footer{
     background-color: var(--color-achtergrondvlakken);
-    border-radius: 2em;
-	
+    border-radius: 1em;
+	margin-top: 1em;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-rows:repeat(8, max-content);
+	padding: .9em;
 }
 footer h2{
-    font-family: "rhode 1";
-    font-size: 7em;
-    color: var(--color-text-footer);
-    margin-top: 0;
-    margin-bottom:0;
-	padding-bottom: 0em;
-	border-bottom: 1px solid var(--color-text-footer);
-
+	grid-column: 1/4;
+	font-size: 30vw;
+	font-family: "rhode titel";
+	color: var(--color-text-hoofdtekst);
+	max-width: 50em;
+	align-self: self-start;
+	justify-self: center;
+	margin: 0;
+	padding: 0;
+	border-bottom: 1px solid var(--color-text-hoofdtekst);
+	
 }
-footer section h3{
-	font-family: "rhode2 2";
+footer p:nth-of-type(1){
+	grid-column: 1/4;
+	grid-row: 2/3;
+	align-self: self-start;
+	color: var(--color-text-footerp);
+	font-family: "rhode 2";
+	font-size: 1em;
+}
+
+footer form {
+	grid-column: 1/4;
+	grid-row: 3/4;
+	align-self: center;
+	
+}
+footer form input{
+	color: var(--color-text-footerp);
+	background-color: var(--color-text-header);
+	border: none;
+	width: 15em;
+	padding: 1.5em;
+
+	border-top-left-radius: 1em;
+	border-bottom-left-radius: 1em;
+	border-right:.1em solid var(--color-text-hoofdtekst) ;
+}
+footer form button{
+	color: var(--color-text-footerp);
+	background-color: var(--color-text-header);
+	border: none;
+	width: 5em;
+	padding: 1.5em;
+	padding-left: .3em;
+	border-top-right-radius: 1em;
+	border-bottom-right-radius: 1em;
+	
+}
+footer p:nth-of-type(2){
+	grid-column: 1/2;
+	grid-row: 4/5;
+	align-self: self-end;
+	color: var(--color-text-footerp);
+	font-family: "rhode 2";
+	font-size: 1em;
 }
 footer section{
-	display: flex;
-	justify-content: space-between;
+	display: grid;
+	  /* grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(8, auto); */
+    column-gap: 2em;
+	margin-bottom: 5em;
+	grid-row: 5/6;     
+	align-self: self-start;
+	padding: 0;
+	margin: 0;
 }
-
-footer section nav ul{
- padding: 0;
- margin: 0;
- list-style: none;
+footer nav ul{
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	
 }
+footer nav ul li{
+	padding-top: .5em;
 
-footer section ul li{
-	padding: 1em;
 }
-
-footer section ul li a{
+footer h3{
+	color: var(--color-text-hoofdtekst);
+	font-family: "rhode 1";
+	text-transform: uppercase;
+}
+footer nav ul a {
 	text-decoration: none;
 	color: var(--color-text-footerp);
 	font-family: "rhode 2";
-	font-size: .9em;
+	font-size: 1em;
 }
-footer section nav h3{
-	font-family: "rhode 2";
-	text-transform: uppercase;
+
+footer section nav:nth-of-type(1){
+	grid-row: 6/7;
+	grid-column: 1/2;
+}
+footer section nav:nth-of-type(2){
+	grid-row: 6/7;
+	grid-column: 2/3;
+}
+footer section nav:nth-of-type(3){
+	grid-row: 6/7;
+	grid-column: 3/4;
+}
+footer section nav:nth-of-type(4){
+	grid-row: 7/8;
+	grid-column: 1/3;
+}
+
+@media (min-width:46em){
+
+footer{
+	display: grid;
+	grid-template-columns: repeat(5, 1fr);
+	grid-template-rows: max-content max-content;
+	
+}
+footer h2{
+	grid-column: 1/6;
+	grid-row: 1/2;
+	font-size: 32vw;
+	font-family: "rhode titel";
 	color: var(--color-text-hoofdtekst);
-	font-size: .9em;
+	max-width: 50em;
+	align-self: self-start;
+	justify-self: center;
+	margin: 0;
+	padding: 0;
+	border-bottom: 1px solid var(--color-text-hoofdtekst);
+	
 }
+footer p:nth-of-type(1){
+	grid-column: 1/3;
+	grid-row: 2/3;
+	align-self: self-start;
+	color: var(--color-text-footerp);
+	font-family: "rhode 2";
+	font-size: 1em;
+}
+footer form {
+	grid-column: 1/3;
+	grid-row: 3/4;
+	align-self: center;
+	
+}
+footer form input{
+	color: var(--color-text-footerp);
+	background-color: var(--color-text-header);
+	border: none;
+	width: 20em;
+	padding: 1.5em;
+
+	border-top-left-radius: 1em;
+	border-bottom-left-radius: 1em;
+	border-right:.1em solid var(--color-text-hoofdtekst) ;
+}
+footer form button{
+	color: var(--color-text-footerp);
+	background-color: var(--color-text-header);
+	border: none;
+	width: 10em;
+	padding: 1.5em;
+	border-top-right-radius: 1em;
+	border-bottom-right-radius: 1em;
+	
+}
+footer p:nth-of-type(2){
+	grid-column: 1/3;
+	grid-row: 4/5;
+	align-self: self-end;
+	color: var(--color-text-footerp);
+	font-family: "rhode 2";
+	font-size: 1em;
+	margin-bottom: 5em;
+}
+footer section{
+	display: flex;
+    justify-content: space-between; 
+	width: 80%;
+    align-items: flex-start;        
+    column-gap:1em; 
+	padding-left: 2em;
+	grid-column: 3/6;
+	grid-row: 2/6;    
+	border-left: .1em solid var(--color-text-hoofdtekst) ;   
+}
+
+footer nav ul{
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	
+}
+footer nav ul li{
+	padding-top: .5em;
+
+}
+footer h3{
+	color: var(--color-text-hoofdtekst);
+	font-family: "rhode 1";
+	text-transform: uppercase;
+}
+footer nav ul a {
+	text-decoration: none;
+	color: var(--color-text-footerp);
+	font-family: "rhode 2";
+	font-size: 1em;
+}
+}
+/* animaties */
+@keyframes knop {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.25);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+main a:hover{
+  animation-name: knop;
+  animation-duration: 1s;
+  animation-iteration-count: 3;
+}
+/* states */
+:focus-visible{
+	outline: solid .2em var(--color-text-footer);
+	outline-offset: .4em;
+	border-radius: 1em;
+}
+::selection {
+  background-color: pink; 
+  color: black;             
+}
+@media (prefers-reduced-motion: reduce) {
+	main a:hover {
+		animation: none !important;
+	}
+}
+
+

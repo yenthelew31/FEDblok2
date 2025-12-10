@@ -29,3 +29,17 @@ function toggleVideo () {
 	}
 	
 }
+
+const link = document.querySelector('main article:nth-of-type(1) a');
+
+link.addEventListener('click', (e) => {
+  e.preventDefault(); // voorkomt dat de pagina navigeert
+
+  // Confetti explosie
+  confetti({
+    particleCount: 100,       // aantal confetti stukjes
+    spread: 70,               // hoe wijd ze verspreiden
+    origin: { y: 0.6 },       // startpunt op het scherm (60% van boven)
+    colors: ['#ff0', '#f00', '#0f0', '#00f', '#f0f'], // vrolijke kleuren
+  });
+});
