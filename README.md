@@ -249,6 +249,7 @@ Wat mij opviel in het algemeen:
 
   1. https://www.w3schools.com/howto/howto_css_hide_scrollbars.asp
   2. https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Selectors/::scroll-button
+  3. https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Values/clamp
   3. Mijn docent
   4. Annabel en Isabella
   5. https://www.rhodeskin.com/en-nl (voor alle afbeeldingen, fonts en de video)
