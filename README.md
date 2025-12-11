@@ -180,11 +180,11 @@ Wat mij opviel in het algemeen:
 
 
 </details>
-<img src="readme-images/pagina1.jpeg width="375px" alt="pagina 1 van de test">
-<img src="readme-images/pagina2.jpeg" width="375px" alt="pagina 2 van de test">
-<img src="readme-images/pagina3.jpeg" width="375px" alt="pagina 3 van de test">
-<img src="readme-images/pagina4.jpeg" width="375px" alt="pagina 4 van de test">
-<img src="readme-images/pagina5.jpeg" width="375px" alt="pagina 5 van de test">
+<img src="pagina1.jpeg" width="375px" alt="pagina 1 van de test">
+<img src="pagina2.jpeg" width="375px" alt="pagina 2 van de test">
+<img src="pagina3.jpeg" width="375px" alt="pagina 3 van de test">
+<img src="pagina4.jpeg" width="375px" alt="pagina 4 van de test">
+<img src="pagina5.jpeg" width="375px" alt="pagina 5 van de test">
 
 
 ## Voortgang 3 (week 4)
